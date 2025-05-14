@@ -1,8 +1,11 @@
 /*Estilos generales*/
 :root {
     --bg-layout: #ffff;
+    --bg-nav: #333333;
+    --color-hover-nav: #1f87c4;
     --color-primary: #ffff;
     --color-text-logo: #1f87c4;
+    --color-text-link: #ffff;
 }
 
 html {
@@ -45,6 +48,34 @@ body {
 .logo__text {
     color: var(--color-primary);
     font-size: 5rem;
+}
+
+.header__nav {
+    width: 100%;
+    height: 5rem;
+    background-color: var(--bg-nav);
+    padding: 0 2rem;
+}
+
+.nav__list {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.list__link {
+    height: 100%;
+    color: var(--color-text-link);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    transition: all 300ms linear;
+}
+
+.list__link:hover {
+    background-color: var(--color-hover-nav);
 }
 
 .layout__slider {
