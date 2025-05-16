@@ -127,7 +127,6 @@ body {
 }
 
 /*Estilos de los articulos*/
-
 .layout__articles {
     grid-area: main;
     margin-right: 7rem;
@@ -170,7 +169,6 @@ body {
 }
 
 /*Estilos barra lateral*/
-
 .layout__aside {
     grid-area: aside;
 }
@@ -240,3 +238,22 @@ body {
 .login__submit:hover {
     border-color: var(--color-primary)
 }
+
+/*Estilos del footer*/
+.footer {
+    max-width: 128rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 0.5rem;
+    padding: 1.5rem;
+    background-color: var(--bg-nav);
+    color: var(--bg-layout);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__top {
+    cursor: pointer;
+}
+
