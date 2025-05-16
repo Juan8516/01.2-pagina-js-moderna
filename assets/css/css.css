@@ -201,3 +201,31 @@ body {
     font-size: 1.5rem;
     padding: 0.5rem;
 }
+
+.aside__login {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.login__container {
+    margin-bottom: 1.5rem;
+}
+
+.login__form-group {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.login__input {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid var(--color-shadow);
+    border-radius: 5px;
+    outline: none;
+    transition: all 300ms linear;
+}
+
+.login__input:focus {
+    border-color: var(--color-text-logo);
+}
