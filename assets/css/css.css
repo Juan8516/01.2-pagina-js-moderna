@@ -7,6 +7,8 @@
     --color-text-logo: #1f87c4;
     --color-text-link: #ffff;
     --color-shadow: #b7b5b5;
+    --color-date: #8d8a8a;
+    --color-light: #59b0e2;
 }
 
 html {
@@ -124,14 +126,47 @@ body {
     opacity: 1;
 }
 
-
-.layout__slider {
-    grid-area: slider;
-
-}
+/*Estilos de los articulos*/
 
 .layout__articles {
     grid-area: main;
+    margin-right: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.article__article {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.article__title {
+    font-size: 3rem;
+}
+
+.article__date {
+    color: var(--color-date);
+}
+
+.article__body {
+    text-align: justify;
+}
+
+.article__btn {
+    width: 12rem;
+    padding: 1.5rem 1rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    background-color: var(--color-text-logo);
+    border: none;
+    color: var(--color-text-link);
+    transition: all 300ms linear;  
+}
+
+.article__btn:hover {
+    background-color: var(--color-light);
 }
 
 .layout__aside {
