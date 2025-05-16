@@ -169,6 +169,35 @@ body {
     background-color: var(--color-light);
 }
 
+/*Estilos barra lateral*/
+
 .layout__aside {
     grid-area: aside;
+}
+
+.aside__header {
+    margin-bottom: 4rem;
+}
+
+.header__container-title {
+    margin-bottom: 2rem;
+}
+
+.header__title,
+.login__title {
+    text-align: center;
+    line-height: 1rem;
+    margin-top: 3rem;
+    background: url(../img/lines.png) repeat-x;
+    color: var(--color-text-logo);
+}
+
+.title__span {
+    background-color: var(--bg-layout);
+    padding: 0.5rem;
+}
+
+.header__Description {
+    font-size: 1.5rem;
+    padding: 0.5rem;
 }
