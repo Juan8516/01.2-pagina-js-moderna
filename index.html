@@ -16,6 +16,7 @@
     <script src="./assets/js/main.js" prefer></script>
     <script src="./assets/js/slider.js" prefer></script>
     <script src="./assets/js/articles.js" prefer></script>
+    <script src="./assets/js/login.js" prefer></script>
 
     <title>Proyecto JS Moderno</title>
 </head>
@@ -126,8 +127,15 @@
                     <input type="password" id="pass" name="pass" class="login__input" placeholder="Contraseña" required />
                 </div>
 
-                <input type="button" value="Entrar" class="login__submit" />
+                <input type="submit" value="Entrar" class="login__submit" />
             </form>
+
+            <div class="aside__data aside__data--hide">
+                <p class="data__text">
+                    Bienvenido, <span class="data__name"></span>
+                </p>
+                <button class="data__logout">Cerrar Sesion</button>
+            </div>
         </aside>
 
     </div>
