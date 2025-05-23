@@ -7,6 +7,18 @@ window.addEventListener("DOMContentLoaded", () => {
     let loginName = document.querySelector(".data__name");
     let btnLogout = document.querySelector(".data__logout");
 
+    let getUser = () => {
+        let myUser = localStorage.getItem("user");
+
+        if(myUser) {
+            let identity = JSON.parse(myUser);
+
+            loginName.innerHTML = identity.name;
+            loginForm.classList.add("aside__login--hide");
+            asideData.classList.remove("aside__data--hide");
+        }
+    };
+
     loginForm.addEventListener("submit", (e) => {
 
         e.preventDefault();
@@ -35,18 +47,15 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    let getUser = () => {
-        let myUser = localStorage.getItem("user");
+        //Mostrar el usuario
+        getUser();
 
-        if(myUser) {
-            let identity = JSON.parse(myUser);
+        //Logout del usuario
+        btnLogout.addEventListener("click", () => {
+            
+            localStorage.clear();
+            loginForm.classList.remove("aside__login--hide");
+            asideData.classList.add("aside__data--hide");
+        })
 
-            loginName.innerHTML = identity.name;
-            loginForm.classList.add("aside__login--hide");
-            asideData.classList.remove("aside__data--hide");
-        }
-    };
-})
-
-
-
+});
