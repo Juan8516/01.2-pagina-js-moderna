@@ -40,7 +40,7 @@ Haz clic derecho en index.html y selecciona "Open with Live Server".
 
 🧹 Pendientes / To-Do
 
- Mejorar la responsividad en dispositivos móviles
+ Mejorar la responsividad en dispositivos móviles - ✅ Hecho
 
  Eliminar código duplicado (SCSS vs LESS)
 
