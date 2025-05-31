@@ -51,11 +51,11 @@ body {
     display: inline-block;
     margin-bottom: 2rem;
     padding: 0.5rem 1.5rem;
-    background-color: var(--color-text-logo);
+    background-color: var(--color-primary);
 }
 
 .logo__text {
-    color: var(--color-primary);
+    color: var(--bg-themes);
     font-size: 5rem;
 }
 
@@ -444,4 +444,43 @@ body {
 
 .themes__blue {
     background-color: var(--bg--themes-blue);
+}
+
+.theme__green--active {
+    --color-primary: var(--bg--themes-green);
+    --color-light: #439988;
+}
+
+.theme__red--active {
+    --color-primary: var(--bg--themes-red);
+    --color-light: #e46e5c;
+}
+
+.theme__blue--active {
+    --color-primary: var(--bg--themes-blue);
+}
+
+.theme__green--active {
+    --color-text-logo: var(--bg--themes-green);
+}
+
+.theme__red--active {
+    --color-text-logo: var(--bg--themes-red);
+}
+
+.theme__blue--active {
+    --color-text-logo: var(--bg--themes-blue);
+}
+
+/*cambio de tema en los fondos*/
+.theme__green--active > body {
+    background-image: url(../img/hojas.jpg);
+}
+
+.theme__red--active > body {
+    background-image: url(../img/rojo.jpg);
+}
+
+.theme__blue--active > body {
+    background-image: url(../img/cielo.jpg);
 }
